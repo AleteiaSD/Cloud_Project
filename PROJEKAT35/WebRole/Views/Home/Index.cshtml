@@ -1,0 +1,35 @@
+﻿<h1>PROJEKAT CLOUD ZADATAK 35</h1>
+<div>
+    @ViewBag.Message1
+</div>
+<form action="~/Home/MetodaBill" method="post">
+    <input type="text" name="indexBill" placeholder="Index" />
+    <input type="datetime-local" name="dateTime" placeholder="DateTime" />
+    <input type="submit" value="Dodaj" name="dodaj"/>
+    <input type="submit" value="Obrisi" name="obrisi" />
+    <input type="submit" value="Izmeni" name="izmeni"/>
+    <input type="submit" value="Izlistaj" name="izlistaj"/>
+</form>
+<div>
+    @ViewBag.Message2
+</div>
+<form action="~/Home/MetodaEntry" method="post">
+    <input type="text" name="indexEntry" placeholder="Index" />
+    <input type="number" name="quantity" placeholder="Quantity" />
+    <input type="submit" value="Dodaj" name="dodaj" />
+    <input type="submit" value="Obrisi" name="obrisi"/>
+    <input type="submit" value="Izmeni" name="izmeni"/>
+    <input type="submit" value="Izlistaj" name="izlistaj"/>
+</form>
+<div>
+    @ViewBag.Message3
+</div>
+<form action="~/Home/MetodaProduct" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="number" name="price" placeholder="Price" />
+    <input type="submit" value="Dodaj" name="dodaj"/>
+    <input type="submit" value="Obrisi" name="obrisi"/>
+    <input type="submit" value="Izmeni" name="izmeni"/>
+    <input type="submit" value="Izlistaj" name="izlistaj"/>
+</form>
+
